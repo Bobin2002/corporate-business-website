@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridian Advisory | Business Consulting</title>
+  <meta name="description" content="Meridian Advisory helps growing companies with strategy, technology and operations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><span class="logo-mark">M</span>Meridian</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-accent btn-sm" href="#contact">Get in touch</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <h1 class="hero-title">We help growing companies make the next decision with confidence.</h1>
+        <p class="lead hero-lead">Strategy, technology and operations support for teams of 20 to 500 people. Clear advice, delivered by people who stay until it works.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-accent btn-lg">Book a free consultation</a>
+          <a href="#portfolio" class="btn btn-outline-light btn-lg">See our work</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="stat-panel">
+          <div class="stat"><span class="count" data-target="240">0</span>+<small>projects delivered</small></div>
+          <div class="stat"><span class="count" data-target="12">0</span><small>years in business</small></div>
+          <div class="stat"><span class="count" data-target="96">0</span>%<small>clients who return</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal">
+        <h2>A small senior team, on purpose.</h2>
+      </div>
+      <div class="col-lg-7 reveal">
+        <p>Meridian started in 2014 with three consultants who were tired of handing over slide decks and walking away. Today we are a team of 28 that works inside our clients' businesses until the plan is running.</p>
+        <p>We keep teams small, assign senior people to every project, and agree on measurable outcomes before we start.</p>
+        <div class="row g-3 mt-2">
+          <div class="col-sm-4"><div class="value"><i class="bi bi-bullseye"></i><h3>Outcome first</h3><p>Every project starts with a number we both want to move.</p></div></div>
+          <div class="col-sm-4"><div class="value"><i class="bi bi-chat-square-text"></i><h3>Plain talk</h3><p>No jargon. You always know what we are doing and why.</p></div></div>
+          <div class="col-sm-4"><div class="value"><i class="bi bi-people"></i><h3>Shared ownership</h3><p>We train your team so you don't depend on us.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section section-dark">
+  <div class="container">
+    <h2 class="mb-2 reveal">What we do</h2>
+    <p class="section-sub reveal">Four service lines. Use one, or combine them.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal"><div class="service-card"><i class="bi bi-graph-up-arrow"></i><h3>Business strategy</h3><p>Market entry, pricing and growth plans built on your real numbers.</p></div></div>
+      <div class="col-md-6 col-lg-3 reveal"><div class="service-card"><i class="bi bi-cpu"></i><h3>Digital transformation</h3><p>Choose, set up and roll out the software your team will actually use.</p></div></div>
+      <div class="col-md-6 col-lg-3 reveal"><div class="service-card"><i class="bi bi-diagram-3"></i><h3>Operations</h3><p>Map workflows, remove delays and cut the cost of doing routine work.</p></div></div>
+      <div class="col-md-6 col-lg-3 reveal"><div class="service-card"><i class="bi bi-mortarboard"></i><h3>Team training</h3><p>Workshops and coaching that leave your managers with new habits.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4 reveal">
+      <div><h2 class="mb-1">Selected work</h2><p class="section-sub mb-0">Results from recent engagements.</p></div>
+      <div class="btn-group" role="group" aria-label="Filter projects" id="filters">
+        <button class="btn btn-filter active" data-filter="all">All</button>
+        <button class="btn btn-filter" data-filter="strategy">Strategy</button>
+        <button class="btn btn-filter" data-filter="digital">Digital</button>
+        <button class="btn btn-filter" data-filter="operations">Operations</button>
+      </div>
+    </div>
+    <div class="row g-4" id="projectGrid">
+      <div class="col-md-6 col-lg-4 project" data-cat="strategy"><article class="project-card p1"><span class="tag">Strategy</span><h3>Regional retailer expansion</h3><p>Opened 6 new stores; revenue up 31% in a year.</p></article></div>
+      <div class="col-md-6 col-lg-4 project" data-cat="digital"><article class="project-card p2"><span class="tag">Digital</span><h3>Logistics dashboard rollout</h3><p>Live shipment tracking cut support calls by 44%.</p></article></div>
+      <div class="col-md-6 col-lg-4 project" data-cat="operations"><article class="project-card p3"><span class="tag">Operations</span><h3>Factory scheduling redesign</h3><p>Idle machine time reduced from 18% to 7%.</p></article></div>
+      <div class="col-md-6 col-lg-4 project" data-cat="digital"><article class="project-card p4"><span class="tag">Digital</span><h3>Clinic booking platform</h3><p>Online booking now handles 70% of appointments.</p></article></div>
+      <div class="col-md-6 col-lg-4 project" data-cat="strategy"><article class="project-card p5"><span class="tag">Strategy</span><h3>Pricing review for a SaaS startup</h3><p>New tiers raised average revenue per user by 22%.</p></article></div>
+      <div class="col-md-6 col-lg-4 project" data-cat="operations"><article class="project-card p6"><span class="tag">Operations</span><h3>Back-office automation</h3><p>Invoice processing time dropped from 5 days to 1.</p></article></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-tint">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5 reveal">
+        <h2>Tell us what you're working on.</h2>
+        <p>We reply within one working day.</p>
+        <ul class="list-unstyled contact-list">
+          <li><i class="bi bi-geo-alt"></i> 14 Marine Drive, Kochi, Kerala</li>
+          <li><i class="bi bi-envelope"></i> hello@meridianadvisory.example</li>
+          <li><i class="bi bi-telephone"></i> +91 98765 43210</li>
+          <li><i class="bi bi-clock"></i> Mon to Fri, 9:30 am to 6 pm</li>
+        </ul>
+      </div>
+      <div class="col-lg-7 reveal">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6"><label for="name" class="form-label">Full name</label><input type="text" class="form-control" id="name" required minlength="2"><div class="invalid-feedback">Enter your name.</div></div>
+            <div class="col-md-6"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" required><div class="invalid-feedback">Enter a valid email address.</div></div>
+            <div class="col-12"><label for="service" class="form-label">Service you need</label>
+              <select class="form-select" id="service" required><option value="">Choose one</option><option>Business strategy</option><option>Digital transformation</option><option>Operations</option><option>Team training</option></select>
+              <div class="invalid-feedback">Choose a service.</div></div>
+            <div class="col-12"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" rows="4" required minlength="10"></textarea><div class="invalid-feedback">Write at least 10 characters.</div></div>
+            <div class="col-12"><button type="submit" class="btn btn-accent btn-lg">Send message</button></div>
+          </div>
+          <div id="formSuccess" class="alert alert-success mt-3 d-none" role="status">Thanks! We have your message and will reply within one working day.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; <span id="year"></span> Meridian Advisory. All rights reserved.</span>
+    <span>Built with HTML, CSS, JavaScript and Bootstrap.</span>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
